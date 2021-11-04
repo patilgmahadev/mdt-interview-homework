@@ -1,38 +1,207 @@
-.App {
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #047aed;
+  color: #fff;
+  height: 70px;
+}
+
+.navbar .flex {
+  align-items: start;
+}
+
+.flex-item {
+  align-items: center;
+  display: flex;
+}
+
+.flex-item h1 {
+  margin-right: 50px;
+}
+
+footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  background-color: #047aed;
+  color: #fff;
+}
+
+.container {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+/* LOGIN PAGE */
+.login
+{
+  margin-top:50vh;
+  margin-bottom: 50vh;
+}
+input[type="text"], input[type="password"], input[type="number"]{
+  width: 255px;
+  height: 30px;
+  margin: 4px;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: gray;
+}
+input[type="submit"] {
+  width: 255px;
+  height: 30px;
+  outline: 0;
+  border-radius: 6pc;
+  border-width: 0;
+  margin: 5px;
+  margin-top: 10vh;
+  background-color: lightgrey;
+  font-weight: bold;
+}
+
+/* TABLE AND TRANSACTIONS */
+td {
+  padding: 8px;
+}
+
+.displayBalance
+{
+  background-color: lightgrey;
+  width: 265px;
+  justify-content: left;
+  text-align: left;
+  padding-left: 10px;
+  padding-bottom: 1vh;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.btnLogoutDiv
+{
+  width: 265px;
+  padding-bottom: 1vh;
+  display: flex;
+  align-self: center;
+  margin-bottom: 1vh;
+}
+.accountBal{
+  font-size: 30px;
+  font-weight: bolder;
+}
+.transactionTable
+{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: 2vw;
+  flex-direction: column;
+}
+.line{
+  width:265px;
+  height: 1;
+  background-color: grey;
+  margin-top: 5vh;
+}
+.hr{
+  width: 5px;
+}
+.transactionDate{
+  font-weight: bold;
+  text-align: left;
+}
+.tdDetails
+{
+  text-align: left;
+  margin: 2px;
+}
+.transfer{
+  color: red;
+  text-align: right;
+  font-size: 15px;
+  font-weight: bold;
+}
+.receive{
+  color: green;
+  text-align: right;
+  font-size: 15px;
+  font-weight: bold;
+}
+.btnTransfer
+{
+  width: 255px;
+  height: 30px;
+  outline: 0;
+  border-width: 0 ;
+  margin: 5px;
+  margin-top: 10vh;
+  color: blue;
+  background-color: white;
+}
+.btnLogout {
+  outline: 0;
+  border-width: 0 ;
+  background-color: white;
+  color: blue;
+  margin-left: auto;
+}
+/* BALANCE TRANSFER */
+.transferPage
+{
+ flex-direction: column;
+ flex : 1;
+}
+.transferPagetop{
+  flex: 1;
+  align-self: center;
+  font-size: 30px;
+  font-style: bold;
+  color:blue;
+  margin-bottom: 20vh;
+}
+.transferPageBtn
+{
+  flex: 1;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin-top: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.transferSelect{
+  outline: 0;
+  width: 255px;
+  height: 30px;
+  margin: 4px;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: gray;
+}
+.repText{
+  font: blue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.transferSubmit {
+  font-weight: bold;
+  margin-left: 50px;
 }
