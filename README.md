@@ -71,4 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 # Home work
 test cases:
-![Test cases](https://github.com/patilgmahadev/mdt-interview-homework/blob/main/screens/test-cases.png)
+![Test cases](https://github.com/patilgmahadev/mdt-interview-homework/blob/master/screens/test-cases.png)
